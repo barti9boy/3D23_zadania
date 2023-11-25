@@ -1,0 +1,3 @@
+C:/Users/Barti/Documents/GitHub/3d23/build/_deps/spdlog-subbuild/CMakeFiles/spdlog-populate.dir
+C:/Users/Barti/Documents/GitHub/3d23/build/_deps/spdlog-subbuild/CMakeFiles/edit_cache.dir
+C:/Users/Barti/Documents/GitHub/3d23/build/_deps/spdlog-subbuild/CMakeFiles/rebuild_cache.dir
