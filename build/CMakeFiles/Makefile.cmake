@@ -63,6 +63,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "_deps/spdlog-src/cmake/ide.cmake"
   "_deps/spdlog-src/cmake/utils.cmake"
   "C:/Users/Barti/Documents/GitHub/3d23/src/Application/CMakeLists.txt"
+  "C:/Users/Barti/Documents/GitHub/3d23/src/Assignments/Colors/CMakeLists.txt"
   "C:/Users/Barti/Documents/GitHub/3d23/src/Assignments/House/CMakeLists.txt"
   "C:/Users/Barti/Documents/GitHub/3d23/src/Assignments/Triangle/CMakeLists.txt"
   "C:/Users/Barti/Documents/GitHub/3d23/src/Engine/CMakeLists.txt"
@@ -97,6 +98,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "src/Engine/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/Assignments/Triangle/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/Assignments/House/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/Assignments/Colors/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -112,4 +114,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/Engine/CMakeFiles/engine.dir/DependInfo.cmake"
   "src/Assignments/Triangle/CMakeFiles/Triangle.dir/DependInfo.cmake"
   "src/Assignments/House/CMakeFiles/House.dir/DependInfo.cmake"
+  "src/Assignments/Colors/CMakeFiles/Colors.dir/DependInfo.cmake"
   )

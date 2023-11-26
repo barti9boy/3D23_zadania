@@ -392,6 +392,9 @@
 		},
 		{
 			"path" : "src/Assignments/House/CMakeLists.txt"
+		},
+		{
+			"path" : "src/Assignments/Colors/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",

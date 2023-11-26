@@ -16,7 +16,8 @@
 						8,
 						9,
 						10,
-						11
+						11,
+						12
 					],
 					"hasInstallRule" : true,
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
@@ -28,7 +29,7 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						4
+						5
 					]
 				},
 				{
@@ -38,7 +39,7 @@
 						2
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-_deps.glfw-build-Debug-e970811731e80f18e5c1.json",
+					"jsonFile" : "directory-_deps.glfw-build-Debug-003411d9bbbdd0262e95.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.4"
@@ -48,13 +49,13 @@
 					"source" : "cmake-build-debug/_deps/glfw-src",
 					"targetIndexes" : 
 					[
-						8
+						9
 					]
 				},
 				{
 					"build" : "_deps/glfw-build/src",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-_deps.glfw-build.src-Debug-f6e8f3a68833ec397967.json",
+					"jsonFile" : "directory-_deps.glfw-build.src-Debug-49ce85c3a97e79908ffd.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.4"
@@ -64,8 +65,8 @@
 					"source" : "cmake-build-debug/_deps/glfw-src/src",
 					"targetIndexes" : 
 					[
-						5,
-						9
+						6,
+						10
 					]
 				},
 				{
@@ -106,7 +107,7 @@
 					"source" : "cmake-build-debug/_deps/spdlog-src",
 					"targetIndexes" : 
 					[
-						7
+						8
 					]
 				},
 				{
@@ -121,7 +122,7 @@
 					"source" : "src/Application",
 					"targetIndexes" : 
 					[
-						2
+						3
 					]
 				},
 				{
@@ -136,7 +137,7 @@
 					"source" : "src/ObjectReader",
 					"targetIndexes" : 
 					[
-						6
+						7
 					]
 				},
 				{
@@ -151,7 +152,7 @@
 					"source" : "src/XeEngine",
 					"targetIndexes" : 
 					[
-						10
+						11
 					]
 				},
 				{
@@ -166,7 +167,7 @@
 					"source" : "src/Engine",
 					"targetIndexes" : 
 					[
-						3
+						4
 					]
 				},
 				{
@@ -181,7 +182,7 @@
 					"source" : "src/Assignments/Triangle",
 					"targetIndexes" : 
 					[
-						1
+						2
 					]
 				},
 				{
@@ -194,6 +195,21 @@
 					"parentIndex" : 0,
 					"projectIndex" : 9,
 					"source" : "src/Assignments/House",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "src/Assignments/Colors",
+					"jsonFile" : "directory-src.Assignments.Colors-Debug-430a06692ddbb15e54fd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 10,
+					"source" : "src/Assignments/Colors",
 					"targetIndexes" : 
 					[
 						0
@@ -214,7 +230,8 @@
 						6,
 						7,
 						8,
-						9
+						9,
+						10
 					],
 					"directoryIndexes" : 
 					[
@@ -223,7 +240,7 @@
 					"name" : "Graphics3DCode",
 					"targetIndexes" : 
 					[
-						4
+						5
 					]
 				},
 				{
@@ -236,9 +253,9 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						5,
-						8,
-						9
+						6,
+						9,
+						10
 					]
 				},
 				{
@@ -259,7 +276,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						7
+						8
 					]
 				},
 				{
@@ -271,7 +288,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						2
+						3
 					]
 				},
 				{
@@ -283,7 +300,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						6
+						7
 					]
 				},
 				{
@@ -295,7 +312,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						10
+						11
 					]
 				},
 				{
@@ -307,7 +324,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						3
+						4
 					]
 				},
 				{
@@ -319,7 +336,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						1
+						2
 					]
 				},
 				{
@@ -331,12 +348,31 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						12
+					],
+					"name" : "Colors",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
 						0
 					]
 				}
 			],
 			"targets" : 
 			[
+				{
+					"directoryIndex" : 12,
+					"id" : "Colors::@5062fdf58fc14a2873b4",
+					"jsonFile" : "target-Colors-Debug-2b1357e0f9bdc3fbf263.json",
+					"name" : "Colors",
+					"projectIndex" : 10
+				},
 				{
 					"directoryIndex" : 11,
 					"id" : "House::@a57c938c6b5fe80120df",
