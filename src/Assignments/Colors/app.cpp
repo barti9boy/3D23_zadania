@@ -43,9 +43,17 @@ void SimpleShapeApplication::init() {
     // Generating the buffer and loading the vertex data into it.
     GLuint v_buffer_handle;
     glGenBuffers(1, &v_buffer_handle);
+    GLuint  i_buffer_handle; //
+    glGenBuffers(1, &v_buffer_handle);
+
     OGL_CALL(glBindBuffer(GL_ARRAY_BUFFER, v_buffer_handle));
+
+
     glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(GLfloat), vertices.data(), GL_STATIC_DRAW);
     glBindBuffer(GL_ARRAY_BUFFER, 0);
+
+
+
 
     // This setups a Vertex Array Object (VAO) that  encapsulates
     // the state of all vertex buffers needed for rendering

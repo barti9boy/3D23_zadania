@@ -88,3 +88,10 @@ C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Colors/CM
 C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Colors/CMakeFiles/install.dir
 C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Colors/CMakeFiles/install/local.dir
 C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Colors/CMakeFiles/install/strip.dir
+C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Indices/CMakeFiles/Indices.dir
+C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Indices/CMakeFiles/edit_cache.dir
+C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Indices/CMakeFiles/rebuild_cache.dir
+C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Indices/CMakeFiles/list_install_components.dir
+C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Indices/CMakeFiles/install.dir
+C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Indices/CMakeFiles/install/local.dir
+C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Indices/CMakeFiles/install/strip.dir
