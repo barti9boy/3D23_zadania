@@ -92,6 +92,11 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Indices/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Uniforms/cmake_install.cmake")
+endif()
+
 if(CMAKE_INSTALL_COMPONENT)
   set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
 else()

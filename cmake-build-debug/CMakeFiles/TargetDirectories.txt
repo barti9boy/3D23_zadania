@@ -95,3 +95,10 @@ C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Indices/C
 C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Indices/CMakeFiles/install.dir
 C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Indices/CMakeFiles/install/local.dir
 C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Indices/CMakeFiles/install/strip.dir
+C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Uniforms/CMakeFiles/Uniforms.dir
+C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Uniforms/CMakeFiles/edit_cache.dir
+C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Uniforms/CMakeFiles/rebuild_cache.dir
+C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Uniforms/CMakeFiles/list_install_components.dir
+C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Uniforms/CMakeFiles/install.dir
+C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Uniforms/CMakeFiles/install/local.dir
+C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Uniforms/CMakeFiles/install/strip.dir
