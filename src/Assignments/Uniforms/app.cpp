@@ -87,8 +87,8 @@ void SimpleShapeApplication::init() {
     glm::vec2 trans{0.0,  -0.25};
     glm::vec2 scale{0.5, 0.5};
     OGL_CALL(glBindBuffer(GL_UNIFORM_BUFFER, transformation_buffer_handle));
-    glBufferData(GL_UNIFORM_BUFFER, 16*sizeof(float), nullptr, GL_STATIC_DRAW);
-    glBindBufferBase(GL_UNIFORM_BUFFER, 0, transformation_buffer_handle);
+    glBufferData(GL_UNIFORM_BUFFER, 12*sizeof(float), nullptr, GL_STATIC_DRAW);
+    glBindBufferBase(GL_UNIFORM_BUFFER, 1, transformation_buffer_handle);
     glBufferSubData(GL_UNIFORM_BUFFER, 0* sizeof(float), 2* sizeof(float), &scale);
     glBufferSubData(GL_UNIFORM_BUFFER, 2* sizeof(float), 2* sizeof(float), &trans);
     glBufferSubData(GL_UNIFORM_BUFFER, 4* sizeof(float), 4* sizeof(float), &rot[0]);
