@@ -102,3 +102,10 @@ C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Uniforms/
 C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Uniforms/CMakeFiles/install.dir
 C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Uniforms/CMakeFiles/install/local.dir
 C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Uniforms/CMakeFiles/install/strip.dir
+C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/PVM/CMakeFiles/PVM.dir
+C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/PVM/CMakeFiles/edit_cache.dir
+C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/PVM/CMakeFiles/rebuild_cache.dir
+C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/PVM/CMakeFiles/list_install_components.dir
+C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/PVM/CMakeFiles/install.dir
+C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/PVM/CMakeFiles/install/local.dir
+C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/PVM/CMakeFiles/install/strip.dir
