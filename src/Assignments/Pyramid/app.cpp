@@ -48,9 +48,9 @@ void SimpleShapeApplication::init() {
             0.0f, 1.0f, 0.0f, 1.0f, 1.0f, 0.0f,
             0.5f, 0.0f, 0.5f, 1.0f, 1.0f, 0.0f,
 
-            0.0f, 1.0f, 0.0f, 0.5f, 1.0f, 0.5f,
-            -0.5f, 0.0f, 0.5f, 0.5f, 1.0f, 0.5f,
-            0.5f, 0.0f, 0.5f, 0.5f, 1.0f, 0.5f,
+            0.0f, 1.0f, 0.0f, 0.5f, 1.0f, 1.0f,
+            -0.5f, 0.0f, 0.5f, 0.5f, 1.0f, 1.0f,
+            0.5f, 0.0f, 0.5f, 0.5f, 1.0f, 1.0f,
 
             -0.5f, 0.0f, 0.5f, 0.5f, 0.0f, 1.0f,
             0.0f, 1.0f, 0.0f, 0.5f, 0.0f, 1.0f,
@@ -111,8 +111,13 @@ void SimpleShapeApplication::init() {
     float aspect_ratio = static_cast<float>(width) / static_cast<float>(height);
     glm::mat4 PVM(1.0f);
 
+    glm::vec3 eye (0.0f, 4.0f, 0.0f);
+    glm::vec3 up(0.0f, 1.0f, 0.0f);
+    if(eye.x == 0 and eye.z == 0){
+        up = glm::vec3(0.0f, 0.0f, 1.0f);
+    }
     glm::mat4 model = glm::mat4(1.0f); // Identity model matrix
-    glm::mat4 view = glm::lookAt(glm::vec3(0.0f, -4.0f, 0.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f)); // Example view matrix
+    glm::mat4 view = glm::lookAt(eye, glm::vec3(0.0f, 0.0f, 0.0f), up); // Example view matrix
     glm::mat4 projection = glm::perspective(glm::radians(45.0f), aspect_ratio, 0.1f, 100.0f); // Example perspective projection matrix
 
     PVM = projection * view * model;
