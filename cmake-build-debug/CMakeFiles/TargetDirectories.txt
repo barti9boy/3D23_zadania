@@ -109,3 +109,10 @@ C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/PVM/CMake
 C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/PVM/CMakeFiles/install.dir
 C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/PVM/CMakeFiles/install/local.dir
 C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/PVM/CMakeFiles/install/strip.dir
+C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Pyramid/CMakeFiles/Pyramid.dir
+C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Pyramid/CMakeFiles/edit_cache.dir
+C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Pyramid/CMakeFiles/rebuild_cache.dir
+C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Pyramid/CMakeFiles/list_install_components.dir
+C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Pyramid/CMakeFiles/install.dir
+C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Pyramid/CMakeFiles/install/local.dir
+C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Pyramid/CMakeFiles/install/strip.dir
