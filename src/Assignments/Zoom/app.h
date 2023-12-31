@@ -36,7 +36,10 @@ public:
             delete camera_;
         }
     }
-    void scroll_callback(double xoffset, double yoffset) override;
+    void scroll_callback(double xoffset, double yoffset) override {
+        Application::scroll_callback(xoffset, yoffset);
+        camera()->zoom(yoffset / 30.0f);
+    }
 
 
 private:

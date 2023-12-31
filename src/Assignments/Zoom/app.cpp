@@ -225,8 +225,4 @@ void SimpleShapeApplication::framebuffer_resize_callback(int w, int h) {
     //P_ = glm::perspective(fov_, aspect_, near_, far_);
 
 }
-void SimpleShapeApplication::scroll_callback(double xoffset, double yoffset) {
-    Application::scroll_callback(xoffset, yoffset);
-    camera()->zoom(yoffset / 30.0f);
-}
 
