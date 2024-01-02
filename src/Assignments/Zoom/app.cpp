@@ -30,7 +30,7 @@ void SimpleShapeApplication::init() {
         exit(-1);
     }
 
-    set_camera(new Camera);
+
 
     // A vector containing the x,y,z vertex coordinates for the triangle.
     std::vector<GLfloat> vertices = {
@@ -77,7 +77,7 @@ void SimpleShapeApplication::init() {
     };
 
 
-
+    set_camera(new Camera);
 
     // Generating the buffer and loading the vertex data into it.
     GLuint v_buffer_handle;
@@ -122,28 +122,19 @@ void SimpleShapeApplication::init() {
     //far_ = 100.0f;
     //P_ = glm::perspective(fov_, aspect_, near_, far_);
 
-    glm::vec3 eye ;
-    glm::vec3 up;
-    glm::vec3 center;
-    if(eye.x == 0 and eye.z == 0){
-        up = glm::vec3(0.0f, 0.0f, 1.0f);
-    }
-
     //V_ = glm::lookAt(eye, center, up);
-    camera_->look_at(glm::vec3(0.0f, 4.0f, 0.0f),
+    camera_->look_at(glm::vec3(2.0f, 2.0f, 0.0f),
                      glm::vec3(0.0f, 1.0f, 0.0f),
-                     glm::vec3(0.0f, 0.0f, 1.0f));
+                     glm::vec3(0.0f, 1.0f, 0.0f));
 
     camera_->perspective(glm::pi<float>()/4.0, (float)w/h, 0.1f, 100.0f);
 
 
-    //PVM
-    auto [width, height] = frame_buffer_size();
-    float aspect_ratio = static_cast<float>(width) / static_cast<float>(height);
+
     glm::mat4 PVM(1.0f);
+    model = glm::mat4(1.0f);
 
-
-    glm::mat4 model = glm::mat4(1.0f); // Identity model matrix
+    // Identity model matrix
     //glm::mat4 view = V_; // Example view matrix
     //glm::mat4 projection = P_; // Example perspective projection matrix
 
@@ -203,7 +194,6 @@ void SimpleShapeApplication::init() {
 
 //This functions is called every frame and does the actual rendering.
 void SimpleShapeApplication::frame() {
-    auto model = glm::mat4(1.0f); // Identity model matrix
     auto PVM = camera_->projection() * camera_->view() * model;
     glBindBuffer(GL_UNIFORM_BUFFER, u_pvm_buffer_);
     glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::mat4), &PVM[0]);

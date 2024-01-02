@@ -3,7 +3,6 @@
 -- GLM: Version 0.9.9.9
 -- Build spdlog: 1.12.0
 -- Build type: Debug
-Warning: directory C:/Users/Barti/Documents/GitHub/3d23/src/Assignments/CameraMovement does not exists.
 Warning: directory C:/Users/Barti/Documents/GitHub/3d23/src/Assignments/Meshes does not exists.
 Warning: directory C:/Users/Barti/Documents/GitHub/3d23/src/Assignments/Materials does not exists.
 Warning: directory C:/Users/Barti/Documents/GitHub/3d23/src/Assignments/MeshesMaterials does not exists.
@@ -13,6 +12,6 @@ Warning: directory C:/Users/Barti/Documents/GitHub/3d23/src/Assignments/Phong do
 Warning: directory C:/Users/Barti/Documents/GitHub/3d23/src/Assignments/PBR does not exists.
 Warning: directory C:/Users/Barti/Documents/GitHub/3d23/src/Assignments/MultipleLights does not exists.
 Warning: directory C:/Users/Barti/Documents/GitHub/3d23/src/Assignments/NormalMaps does not exists.
--- Configuring done (7.1s)
+-- Configuring done (6.8s)
 -- Generating done (0.1s)
 -- Build files have been written to: C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug

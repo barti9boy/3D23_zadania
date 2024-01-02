@@ -52,4 +52,5 @@ private:
     float far_;
 
     glm::mat4 V_;
+
 };

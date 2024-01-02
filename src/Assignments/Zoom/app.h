@@ -43,7 +43,7 @@ public:
 
 
 private:
+    glm::mat4 model;
     GLuint u_pvm_buffer_;
     GLuint vao_;
-    glm::mat4 V_;
 };
