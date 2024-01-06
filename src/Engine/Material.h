@@ -33,7 +33,6 @@ namespace xe {
         static GLuint color_uniform_buffer_;
 
         glm::vec4 color_;
-
     };
 
 

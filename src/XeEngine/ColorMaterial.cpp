@@ -90,7 +90,7 @@ namespace xe {
         GLint width, height, channels;
         auto img = stbi_load(name.c_str(), &width, &height, &channels, 0);
         if (!img) {
-            spdlog::warn("Could not read image from file `{}'", name);
+            //spdlog::warn("Could not read image from file `{}'", name);
             return 0;
         }
         GLenum format;

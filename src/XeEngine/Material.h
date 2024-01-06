@@ -6,11 +6,11 @@
 
 #include <glad/gl.h>
 #include <glm/glm.hpp>
+#include "ColorMaterial.h"
 
 
 namespace xe {
-
-
+    
     class Material {
     public:
 

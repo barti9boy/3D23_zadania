@@ -36,6 +36,7 @@ namespace xe {
         static GLuint color_uniform_buffer_;
         static GLint uniform_map_Kd_location_;
 
+
         glm::vec4 Kd_;
         GLuint texture_;
         GLuint texture_unit_;

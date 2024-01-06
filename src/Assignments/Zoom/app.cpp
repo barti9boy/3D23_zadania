@@ -86,7 +86,7 @@ void SimpleShapeApplication::init() {
     glGenBuffers(1, &i_buffer_handle);
     GLuint uniform_buffer_handle;
     glGenBuffers(1, &uniform_buffer_handle);
-    GLuint transformation_buffer_handle;
+
     glGenBuffers(1, &transformation_buffer_handle);
 
 
@@ -123,7 +123,7 @@ void SimpleShapeApplication::init() {
     //P_ = glm::perspective(fov_, aspect_, near_, far_);
 
     //V_ = glm::lookAt(eye, center, up);
-    camera_->look_at(glm::vec3(2.0f, 2.0f, 0.0f),
+    camera_->look_at(glm::vec3(2.0f, 4.0f, 0.0f),
                      glm::vec3(0.0f, 1.0f, 0.0f),
                      glm::vec3(0.0f, 1.0f, 0.0f));
 
@@ -138,7 +138,7 @@ void SimpleShapeApplication::init() {
     //glm::mat4 view = V_; // Example view matrix
     //glm::mat4 projection = P_; // Example perspective projection matrix
 
-    PVM = camera_->projection() * camera_->view() * model;
+    //PVM = camera_->projection() * camera_->view() * model;
 
     OGL_CALL(glBindBuffer(GL_UNIFORM_BUFFER, transformation_buffer_handle));
     glBufferData(GL_UNIFORM_BUFFER, sizeof(glm::mat4), glm::value_ptr(PVM), GL_STATIC_DRAW);
@@ -195,7 +195,7 @@ void SimpleShapeApplication::init() {
 //This functions is called every frame and does the actual rendering.
 void SimpleShapeApplication::frame() {
     auto PVM = camera_->projection() * camera_->view() * model;
-    glBindBuffer(GL_UNIFORM_BUFFER, u_pvm_buffer_);
+    glBindBuffer(GL_UNIFORM_BUFFER, transformation_buffer_handle);
     glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::mat4), &PVM[0]);
     glBindBuffer(GL_UNIFORM_BUFFER, 0);
 

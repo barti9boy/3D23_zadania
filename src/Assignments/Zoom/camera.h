@@ -7,6 +7,7 @@
 #include "glm/glm.hpp"
 #include "glm/gtc/matrix_transform.hpp"
 
+
 class Camera {
 public:
 
@@ -38,11 +39,13 @@ public:
     }
 
     void zoom(float y_offset) {
+        std::cout << "Before zoom: " << fov_ << std::endl;
         auto x = fov_ / glm::pi<float>();
         auto y = inverse_logistic(x);
         y += y_offset;
         x = logistic(y);
         fov_ = x * glm::pi<float>();
+        std::cout << "After zoom: " << fov_ << std::endl;
     }
 
 private:

@@ -170,7 +170,7 @@ CMAKE_INSTALL_SYSCONFDIR:PATH=etc
 CMAKE_LINKER:FILEPATH=C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/ld.exe
 
 //make program
-CMAKE_MAKE_PROGRAM:FILEPATH=C:/Program Files/JetBrains/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe
+CMAKE_MAKE_PROGRAM:FILEPATH=C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe
 
 //Flags used by the linker during the creation of modules during
 // all build types.
@@ -439,6 +439,15 @@ Indices_IS_TOP_LEVEL:STATIC=OFF
 Indices_SOURCE_DIR:STATIC=C:/Users/Barti/Documents/GitHub/3d23/src/Assignments/Indices
 
 //Value Computed by CMake
+MeshesMaterials_BINARY_DIR:STATIC=C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/MeshesMaterials
+
+//Value Computed by CMake
+MeshesMaterials_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+MeshesMaterials_SOURCE_DIR:STATIC=C:/Users/Barti/Documents/GitHub/3d23/src/Assignments/MeshesMaterials
+
+//Value Computed by CMake
 OBJReader_BINARY_DIR:STATIC=C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/ObjectReader
 
 //Value Computed by CMake
@@ -561,6 +570,15 @@ SPDLOG_WCHAR_FILENAMES:BOOL=OFF
 
 //Support wchar api
 SPDLOG_WCHAR_SUPPORT:BOOL=OFF
+
+//Value Computed by CMake
+Textures_BINARY_DIR:STATIC=C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Textures
+
+//Value Computed by CMake
+Textures_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Textures_SOURCE_DIR:STATIC=C:/Users/Barti/Documents/GitHub/3d23/src/Assignments/Textures
 
 //Value Computed by CMake
 Triangle_BINARY_DIR:STATIC=C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Triangle
@@ -762,7 +780,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=20
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=22
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
