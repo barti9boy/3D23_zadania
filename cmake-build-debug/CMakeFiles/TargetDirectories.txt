@@ -145,10 +145,3 @@ C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/MeshesMat
 C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/MeshesMaterials/CMakeFiles/install.dir
 C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/MeshesMaterials/CMakeFiles/install/local.dir
 C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/MeshesMaterials/CMakeFiles/install/strip.dir
-C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Textures/CMakeFiles/Textures.dir
-C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Textures/CMakeFiles/edit_cache.dir
-C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Textures/CMakeFiles/rebuild_cache.dir
-C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Textures/CMakeFiles/list_install_components.dir
-C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Textures/CMakeFiles/install.dir
-C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Textures/CMakeFiles/install/local.dir
-C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug/src/Assignments/Textures/CMakeFiles/install/strip.dir

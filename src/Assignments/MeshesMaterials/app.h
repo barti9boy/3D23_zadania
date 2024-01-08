@@ -16,8 +16,9 @@
 #include <glm/gtc/type_ptr.hpp>
 #include "camera.h"
 #include "CameraControler.h"
-#include "Engine/Mesh.h"
 #include "Engine/Material.h"
+#include "Engine/Mesh.h"
+
 
 class SimpleShapeApplication : public xe::Application
 {
@@ -30,15 +31,12 @@ public:
 
     void framebuffer_resize_callback(int w, int h) override;
 
-
     glm::mat4 model;
     Camera *camera_;
     CameraControler *controler_;
-    std::vector<xe::Mesh*> meshes_;
 
-    void add_submesh(xe::Mesh *mesh) {
-        meshes_.push_back(mesh);
-    }
+
+
 
     void set_controler(CameraControler *controler) { controler_ = controler; controler_->LMB_pressed_=false; controler_->scale_=0.01;}
 
@@ -79,7 +77,10 @@ public:
 
 
 private:
-
+    void add_submesh(xe::Mesh *mesh) {
+        meshes_.push_back(mesh);
+    }
+    std::vector<xe::Mesh*> meshes_;
     GLuint transformation_buffer_handle;
     GLuint u_pvm_buffer_;
     GLuint vao_;

@@ -6,10 +6,11 @@
 Warning: directory C:/Users/Barti/Documents/GitHub/3d23/src/Assignments/Meshes does not exists.
 Warning: directory C:/Users/Barti/Documents/GitHub/3d23/src/Assignments/Materials does not exists.
 Warning: directory C:/Users/Barti/Documents/GitHub/3d23/src/Assignments/SceneGraph does not exists.
+Warning: directory C:/Users/Barti/Documents/GitHub/3d23/src/Assignments/Textures does not exists.
 Warning: directory C:/Users/Barti/Documents/GitHub/3d23/src/Assignments/Phong does not exists.
 Warning: directory C:/Users/Barti/Documents/GitHub/3d23/src/Assignments/PBR does not exists.
 Warning: directory C:/Users/Barti/Documents/GitHub/3d23/src/Assignments/MultipleLights does not exists.
 Warning: directory C:/Users/Barti/Documents/GitHub/3d23/src/Assignments/NormalMaps does not exists.
--- Configuring done (6.8s)
+-- Configuring done (7.3s)
 -- Generating done (0.1s)
 -- Build files have been written to: C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug

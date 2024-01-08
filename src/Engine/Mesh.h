@@ -7,13 +7,12 @@
 #include <vector>
 #include "glad/gl.h"
 #include "Material.h"
-#include "Material.cpp"
 
 
 namespace xe {
 
     struct SubMesh {
-        SubMesh(GLuint start, GLuint end) : start(start), end(end) {}
+        SubMesh(GLuint start, GLuint end, Material* material = nullptr) : start(start), end(end), material(material) {}
 
         GLuint start;
         GLuint end;

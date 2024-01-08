@@ -35,33 +35,31 @@ void SimpleShapeApplication::init() {
     set_controler(new CameraControler(camera()));
 
 
-
-
     // A vector containing the x,y,z vertex coordinates for the triangle.
     std::vector<GLfloat> vertices = {
-            -0.5f, 0.0f, -0.5f, 1.0f, 0.0f, 0.0f,
-            0.5f, 0.0f, -0.5f, 1.0f, 0.0f, 0.0f,
-            -0.5f, 0.0f, 0.5f, 1.0f, 0.0f, 0.0f,
+            -0.5f, 0.0f, -0.5f,
+            0.5f, 0.0f, -0.5f,
+            -0.5f, 0.0f, 0.5f,
 
-            -0.5f, 0.0f, 0.5f, 1.0f, 0.0f, 0.0f,
-            0.5f, 0.0f, -0.5f, 1.0f, 0.0f, 0.0f,
-            0.5f, 0.0f, 0.5f, 1.0f, 0.0f, 0.0f,
+            -0.5f, 0.0f, 0.5f,
+            0.5f, 0.0f, -0.5f,
+            0.5f, 0.0f, 0.5f,
 
-            -0.5f, 0.0f, -0.5f, 0.0f, 1.0f, 0.5f,
-            0.0f, 1.0f, 0.0f, 0.0f, 1.0f, 0.5f,
-            0.5f, 0.0f, -0.5f, 0.0f, 1.0f, 0.5f,
+            -0.5f, 0.0f, -0.5f,
+            0.0f, 1.0f, 0.0f,
+            0.5f, 0.0f, -0.5f,
 
-            0.5f, 0.0f, -0.5f, 1.0f, 1.0f, 0.0f,
-            0.0f, 1.0f, 0.0f, 1.0f, 1.0f, 0.0f,
-            0.5f, 0.0f, 0.5f, 1.0f, 1.0f, 0.0f,
+            0.5f, 0.0f, -0.5f,
+            0.0f, 1.0f, 0.0f,
+            0.5f, 0.0f, 0.5f,
 
-            0.0f, 1.0f, 0.0f, 0.5f, 1.0f, 1.0f,
-            -0.5f, 0.0f, 0.5f, 0.5f, 1.0f, 1.0f,
-            0.5f, 0.0f, 0.5f, 0.5f, 1.0f, 1.0f,
+            0.0f, 1.0f, 0.0f,
+            -0.5f, 0.0f, 0.5f,
+            0.5f, 0.0f, 0.5f,
 
-            -0.5f, 0.0f, 0.5f, 0.5f, 0.0f, 1.0f,
-            0.0f, 1.0f, 0.0f, 0.5f, 0.0f, 1.0f,
-            -0.5f, 0.0f, -0.5f, 0.5f, 0.0f, 1.0f,
+            -0.5f, 0.0f, 0.5f,
+            0.0f, 1.0f, 0.0f,
+            -0.5f, 0.0f, -0.5f,
 
 
             //-0.5f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f,
@@ -72,6 +70,7 @@ void SimpleShapeApplication::init() {
 
 
     };
+
     std::vector<GLushort> indices  = {
             0, 1, 2,
             3, 4, 5,
@@ -85,15 +84,17 @@ void SimpleShapeApplication::init() {
     pyramid->allocate_vertex_buffer(vertices.size() * sizeof(GLfloat), GL_STATIC_DRAW);
     pyramid->load_vertices(0, vertices.size() * sizeof(GLfloat), vertices.data());
     pyramid->vertex_attrib_pointer(0, 3, GL_FLOAT, 3 * sizeof(GLfloat), 0);
+
     pyramid->allocate_index_buffer(indices.size() * sizeof(GLfloat), GL_STATIC_DRAW);
     pyramid->load_indices(0, indices.size() * sizeof(GLfloat), indices.data());
 
-    pyramid->add_submesh(0, 6, new xe::ColorMaterial({1.0f, 1.0f, 1.0f, 1.0f}));
-    pyramid->add_submesh(6, 9, new xe::ColorMaterial({0.0f, 0.0f, 0.0f, 1.0f}));
-    pyramid->add_submesh(9, 12, new xe::ColorMaterial({0.0f, 0.0f, 1.0f, 1.0f}));
-    pyramid->add_submesh(12, 15, new xe::ColorMaterial({1.0f, 0.0f, 0.0f, 1.0f}));
-    pyramid->add_submesh(15, 18, new xe::ColorMaterial({0.0f, 1.0f, 0.0f, 1.0f}));
+    pyramid->add_submesh(0, 6, new xe::ColorMaterial({0.5f, 1.0f, 0.2f, 1.0f}));
+    pyramid->add_submesh(6, 9, new xe::ColorMaterial({1.0f, 0.75f, 0.0f, 1.0f}));
+    pyramid->add_submesh(9, 12, new xe::ColorMaterial({1.0f, 0.20f, 0.5f, 1.0f}));
+    pyramid->add_submesh(12, 15, new xe::ColorMaterial({0.25f, 0.75f, 1.0f, 1.0f}));
+    pyramid->add_submesh(15, 18, new xe::ColorMaterial({0.3f, 1.0f, 0.8f, 1.0f}));
 
+    add_submesh(pyramid);
 
     // Generating the buffer and loading the vertex data into it.
     GLuint v_buffer_handle;
@@ -118,7 +119,7 @@ void SimpleShapeApplication::init() {
     OGL_CALL(glBindBuffer(GL_UNIFORM_BUFFER, uniform_buffer_handle));
     glBufferData(GL_UNIFORM_BUFFER, 8*sizeof(float), nullptr, GL_STATIC_DRAW);
     glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(float), &strength);
-    //glBufferSubData(GL_UNIFORM_BUFFER, 4*sizeof(float), 3 * sizeof(float),&color);
+    glBufferSubData(GL_UNIFORM_BUFFER, 4*sizeof(float), 3 * sizeof(float),&color);
 
 
     /*float fov_;
@@ -219,7 +220,7 @@ void SimpleShapeApplication::frame() {
     glBindBuffer(GL_UNIFORM_BUFFER, transformation_buffer_handle);
     glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::mat4), &PVM[0]);
     glBindBuffer(GL_UNIFORM_BUFFER, 0);
-    for (auto m: meshes_)
+
     for (auto m: meshes_)
         m->draw();
 

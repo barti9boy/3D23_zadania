@@ -10,7 +10,8 @@ add_executable(${PROJECT_NAME}
         camera.h
         CameraControler.h
 )
-target_link_libraries(${PROJECT_NAME} PUBLIC engine)
+        
 target_link_libraries(${PROJECT_NAME} PUBLIC )
+target_link_libraries(${PROJECT_NAME} PUBLIC engine)
 target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/src)
 
