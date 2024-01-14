@@ -25,7 +25,8 @@
 						17,
 						18,
 						19,
-						20
+						20,
+						21
 					],
 					"hasInstallRule" : true,
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
@@ -37,7 +38,7 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						13
+						14
 					]
 				},
 				{
@@ -47,7 +48,7 @@
 						2
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-_deps.glfw-build-Debug-ecdfe6a5e344e246939a.json",
+					"jsonFile" : "directory-_deps.glfw-build-Debug-0e1c19d4b4ea54a5b5bf.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.4"
@@ -57,13 +58,13 @@
 					"source" : "cmake-build-debug/_deps/glfw-src",
 					"targetIndexes" : 
 					[
-						18
+						19
 					]
 				},
 				{
 					"build" : "_deps/glfw-build/src",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-_deps.glfw-build.src-Debug-7f697f34c49aefbc0f2c.json",
+					"jsonFile" : "directory-_deps.glfw-build.src-Debug-0cb7d26bfd55246d8b05.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.4"
@@ -73,8 +74,8 @@
 					"source" : "cmake-build-debug/_deps/glfw-src/src",
 					"targetIndexes" : 
 					[
-						14,
-						19
+						15,
+						20
 					]
 				},
 				{
@@ -104,7 +105,7 @@
 					"source" : "cmake-build-debug/_deps/glm-src/glm",
 					"targetIndexes" : 
 					[
-						15
+						16
 					]
 				},
 				{
@@ -119,7 +120,7 @@
 					"source" : "cmake-build-debug/_deps/spdlog-src",
 					"targetIndexes" : 
 					[
-						17
+						18
 					]
 				},
 				{
@@ -134,7 +135,7 @@
 					"source" : "src/Application",
 					"targetIndexes" : 
 					[
-						11
+						12
 					]
 				},
 				{
@@ -149,7 +150,7 @@
 					"source" : "src/ObjectReader",
 					"targetIndexes" : 
 					[
-						16
+						17
 					]
 				},
 				{
@@ -164,7 +165,7 @@
 					"source" : "src/XeEngine",
 					"targetIndexes" : 
 					[
-						20
+						21
 					]
 				},
 				{
@@ -179,7 +180,7 @@
 					"source" : "src/Engine",
 					"targetIndexes" : 
 					[
-						12
+						13
 					]
 				},
 				{
@@ -194,7 +195,7 @@
 					"source" : "src/Assignments/Triangle",
 					"targetIndexes" : 
 					[
-						8
+						9
 					]
 				},
 				{
@@ -254,7 +255,7 @@
 					"source" : "src/Assignments/Uniforms",
 					"targetIndexes" : 
 					[
-						9
+						10
 					]
 				},
 				{
@@ -314,7 +315,7 @@
 					"source" : "src/Assignments/Zoom",
 					"targetIndexes" : 
 					[
-						10
+						11
 					]
 				},
 				{
@@ -346,6 +347,21 @@
 					[
 						4
 					]
+				},
+				{
+					"build" : "src/Assignments/Textures",
+					"jsonFile" : "directory-src.Assignments.Textures-Debug-029ba36a0331753ce57c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 19,
+					"source" : "src/Assignments/Textures",
+					"targetIndexes" : 
+					[
+						8
+					]
 				}
 			],
 			"name" : "Debug",
@@ -371,7 +387,8 @@
 						15,
 						16,
 						17,
-						18
+						18,
+						19
 					],
 					"directoryIndexes" : 
 					[
@@ -380,7 +397,7 @@
 					"name" : "Graphics3DCode",
 					"targetIndexes" : 
 					[
-						13
+						14
 					]
 				},
 				{
@@ -393,9 +410,9 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						14,
-						18,
-						19
+						15,
+						19,
+						20
 					]
 				},
 				{
@@ -408,7 +425,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						15
+						16
 					]
 				},
 				{
@@ -420,7 +437,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						17
+						18
 					]
 				},
 				{
@@ -432,7 +449,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						11
+						12
 					]
 				},
 				{
@@ -444,7 +461,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						16
+						17
 					]
 				},
 				{
@@ -456,7 +473,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						20
+						21
 					]
 				},
 				{
@@ -468,7 +485,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						12
+						13
 					]
 				},
 				{
@@ -480,7 +497,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						8
+						9
 					]
 				},
 				{
@@ -528,7 +545,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						9
+						10
 					]
 				},
 				{
@@ -576,7 +593,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						10
+						11
 					]
 				},
 				{
@@ -602,6 +619,18 @@
 					[
 						4
 					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						21
+					],
+					"name" : "Textures",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						8
+					]
 				}
 			],
 			"targets" : 
@@ -609,77 +638,84 @@
 				{
 					"directoryIndex" : 19,
 					"id" : "CameraMovement::@1dd1a3e3b31e895b5f56",
-					"jsonFile" : "target-CameraMovement-Debug-ed2924cb777c90fce9fc.json",
+					"jsonFile" : "target-CameraMovement-Debug-e995223e4cba46082785.json",
 					"name" : "CameraMovement",
 					"projectIndex" : 17
 				},
 				{
 					"directoryIndex" : 12,
 					"id" : "Colors::@5062fdf58fc14a2873b4",
-					"jsonFile" : "target-Colors-Debug-41bdebcb45a84c59590a.json",
+					"jsonFile" : "target-Colors-Debug-4f39bab8fd25146181a3.json",
 					"name" : "Colors",
 					"projectIndex" : 10
 				},
 				{
 					"directoryIndex" : 11,
 					"id" : "House::@a57c938c6b5fe80120df",
-					"jsonFile" : "target-House-Debug-49a51fab95defd2915e9.json",
+					"jsonFile" : "target-House-Debug-80afd7d032174d730751.json",
 					"name" : "House",
 					"projectIndex" : 9
 				},
 				{
 					"directoryIndex" : 13,
 					"id" : "Indices::@7518ba586045ff6a9b77",
-					"jsonFile" : "target-Indices-Debug-959f2c79a1117e276cc4.json",
+					"jsonFile" : "target-Indices-Debug-c82be9d74f48628f1ef3.json",
 					"name" : "Indices",
 					"projectIndex" : 11
 				},
 				{
 					"directoryIndex" : 20,
 					"id" : "MeshesMaterials::@d485c1eb949b9afbb566",
-					"jsonFile" : "target-MeshesMaterials-Debug-668220641f653d61a231.json",
+					"jsonFile" : "target-MeshesMaterials-Debug-212df8026638192caaed.json",
 					"name" : "MeshesMaterials",
 					"projectIndex" : 18
 				},
 				{
 					"directoryIndex" : 15,
 					"id" : "PVM::@52808b3e216cfe39f7b8",
-					"jsonFile" : "target-PVM-Debug-579208266766a117278c.json",
+					"jsonFile" : "target-PVM-Debug-a00a7ec10f4b0aead781.json",
 					"name" : "PVM",
 					"projectIndex" : 13
 				},
 				{
 					"directoryIndex" : 16,
 					"id" : "Pyramid::@ea055d38d21e054cdebf",
-					"jsonFile" : "target-Pyramid-Debug-ac0e38be4124cf23bd1c.json",
+					"jsonFile" : "target-Pyramid-Debug-ea70f765e7b0d3975019.json",
 					"name" : "Pyramid",
 					"projectIndex" : 14
 				},
 				{
 					"directoryIndex" : 17,
 					"id" : "Resizing::@80b58e68574a65d33c27",
-					"jsonFile" : "target-Resizing-Debug-c88eeb93de9a322ff573.json",
+					"jsonFile" : "target-Resizing-Debug-947d43768349ab042320.json",
 					"name" : "Resizing",
 					"projectIndex" : 15
 				},
 				{
+					"directoryIndex" : 21,
+					"id" : "Textures::@443935110c530755700f",
+					"jsonFile" : "target-Textures-Debug-8c796fbaf599af33892a.json",
+					"name" : "Textures",
+					"projectIndex" : 19
+				},
+				{
 					"directoryIndex" : 10,
 					"id" : "Triangle::@ee163803f4c0a4b34178",
-					"jsonFile" : "target-Triangle-Debug-89aca79bf4f343f8ae4d.json",
+					"jsonFile" : "target-Triangle-Debug-41ca0fee66fffa0994de.json",
 					"name" : "Triangle",
 					"projectIndex" : 8
 				},
 				{
 					"directoryIndex" : 14,
 					"id" : "Uniforms::@72af09b1f554c581fc86",
-					"jsonFile" : "target-Uniforms-Debug-18d2bca46159383f8ee5.json",
+					"jsonFile" : "target-Uniforms-Debug-83353f29e7561c4fdcac.json",
 					"name" : "Uniforms",
 					"projectIndex" : 12
 				},
 				{
 					"directoryIndex" : 18,
 					"id" : "Zoom::@d3a55d88706d926832ee",
-					"jsonFile" : "target-Zoom-Debug-9ba7c79a855eb5875e17.json",
+					"jsonFile" : "target-Zoom-Debug-b79e1218847711d6964f.json",
 					"name" : "Zoom",
 					"projectIndex" : 16
 				},
