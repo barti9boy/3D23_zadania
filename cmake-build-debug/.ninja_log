@@ -67,3 +67,14 @@
 1261	1356	7264432924958804	src/Engine/libengine.a	6c781eb292aaca08
 8	2050	7264437995274917	src/Assignments/MeshesMaterials/CMakeFiles/MeshesMaterials.dir/app.cpp.obj	9169cb1dfda6ed1e
 2051	4598	7264438020706803	src/Assignments/MeshesMaterials/MeshesMaterials.exe	e3081388e832a2ac
+9	1690	7274699123899482	src/Engine/CMakeFiles/engine.dir/Mesh.cpp.obj	121b39b5f98edac7
+15	1801	7274699125006583	src/Engine/CMakeFiles/engine.dir/Material.cpp.obj	7baed52c113b90f6
+21	1858	7274699125590802	src/Assignments/Textures/CMakeFiles/Textures.dir/main.cpp.obj	b855f31ca81d0e3c
+1801	1918	7274699126199172	src/Engine/libengine.a	6c781eb292aaca08
+11	1487	7274742539651460	src/Assignments/Textures/CMakeFiles/Textures.dir/main.cpp.obj	b855f31ca81d0e3c
+7	2624	7274742839775880	src/Assignments/Textures/CMakeFiles/Textures.dir/app.cpp.obj	3e34583b347b4043
+2625	5419	7274742867684085	src/Assignments/Textures/Textures.exe	27b8cd62ce3b3bf9
+7	2745	7274743236196994	src/Assignments/Textures/CMakeFiles/Textures.dir/app.cpp.obj	3e34583b347b4043
+2745	5305	7274743261764646	src/Assignments/Textures/Textures.exe	27b8cd62ce3b3bf9
+7	2596	7274743350906086	src/Assignments/Textures/CMakeFiles/Textures.dir/app.cpp.obj	3e34583b347b4043
+2596	5131	7274743376222169	src/Assignments/Textures/Textures.exe	27b8cd62ce3b3bf9
