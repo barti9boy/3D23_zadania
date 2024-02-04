@@ -20,6 +20,8 @@
 #include "Engine/Mesh.h"
 
 
+
+
 class SimpleShapeApplication : public xe::Application
 {
 public:
@@ -82,8 +84,6 @@ private:
     }
     std::vector<xe::Mesh*> meshes_;
     GLuint transformation_buffer_handle;
-    GLint  uniform_map_Kd_location_ = 0;
-    GLint shader_;
     GLuint u_pvm_buffer_;
     GLuint vao_;
 };

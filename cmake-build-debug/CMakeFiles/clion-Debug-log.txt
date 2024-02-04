@@ -1,6 +1,7 @@
 "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Users\Barti\Documents\GitHub\3d23 -B C:\Users\Barti\Documents\GitHub\3d23\cmake-build-debug
 -- Including Win32 support
--- GLM: Version 0.9.9.9
+-- GLM: Version 1.0.0
+GLM: GCC - GNU compiler
 -- Build spdlog: 1.13.0
 -- Build type: Debug
 Warning: directory C:/Users/Barti/Documents/GitHub/3d23/src/Assignments/Meshes does not exists.
@@ -10,6 +11,6 @@ Warning: directory C:/Users/Barti/Documents/GitHub/3d23/src/Assignments/Phong do
 Warning: directory C:/Users/Barti/Documents/GitHub/3d23/src/Assignments/PBR does not exists.
 Warning: directory C:/Users/Barti/Documents/GitHub/3d23/src/Assignments/MultipleLights does not exists.
 Warning: directory C:/Users/Barti/Documents/GitHub/3d23/src/Assignments/NormalMaps does not exists.
--- Configuring done (9.0s)
+-- Configuring done (8.1s)
 -- Generating done (0.1s)
 -- Build files have been written to: C:/Users/Barti/Documents/GitHub/3d23/cmake-build-debug

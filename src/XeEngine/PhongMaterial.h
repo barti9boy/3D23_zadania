@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include "Material.h"
+#include "XeEngine/Material.h"
 
 #include <string>
 

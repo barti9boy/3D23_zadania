@@ -9,14 +9,14 @@
 #include <memory>
 
 
-#include "spdlog/spdlog.h"
-#include "spdlog/sinks/stdout_sinks.h"
+//#"spdlog/spdlog.h"
+//#include "spdlog/sinks/stdout_sinks.h"
 #include "glm/gtx/string_cast.hpp"
 #include "glm/gtc/type_ptr.hpp"
 
 #include "ObjectReader/obj_reader.h"
 #include "XeEngine/ColorMaterial.h"
-#include "XeEngine/PhongMaterial.h"
+#include "PhongMaterial.h"
 #include "XeEngine/Mesh.h"
 
 
@@ -28,7 +28,7 @@ namespace {
 namespace xe {
 
 
-    std::shared_ptr<Mesh> load_mesh_from_obj(std::string path, std::string mtl_dir) {
+    Mesh* load_mesh_from_obj(std::string path, std::string mtl_dir) {
 
         auto smesh = xe::load_smesh_from_obj(path, mtl_dir);
         if (smesh.vertex_coords.empty())
@@ -69,7 +69,7 @@ namespace xe {
 
             auto v_offset = offset;
             for (auto i = 0; i < smesh.vertex_coords.size(); i++, v_offset += stride) {
-                spdlog::debug("vertex[{}] {} ", i, glm::to_string(smesh.vertex_coords[i]));
+                //spdlog::debug("vertex[{}] {} ", i, glm::to_string(smesh.vertex_coords[i]));
                 std::memcpy(v_ptr + v_offset, glm::value_ptr(smesh.vertex_coords[i]), sizeof(glm::vec3));
             }
         }
@@ -101,7 +101,7 @@ namespace xe {
 
         for (int i = 0; i < smesh.submeshes.size(); i++) {
             auto sm = smesh.submeshes[i];
-            spdlog::debug("Adding submesh {:4d} {:4d} {:4d}", i, sm.start, sm.end);
+            //spdlog::debug("Adding submesh {:4d} {:4d} {:4d}", i, sm.start, sm.end);
             Material* material = new xe::ColorMaterial(glm::vec4{1.0, 1.0, 1.0, 1.0});
             if (sm.mat_idx >= 0) {
                 auto mat = smesh.materials[sm.mat_idx];
@@ -114,11 +114,11 @@ namespace xe {
                         break;
                 }
 
-                mesh->add_submesh(sm.start, sm.end, material, false);
+                mesh->add_submesh(sm.start, sm.end, material);
             }
 
         }
-        return std::shared_ptr<Mesh>(mesh);
+        return mesh;
 
 
     }
@@ -132,11 +132,11 @@ namespace xe {
             for (int i = 0; i < 3; i++)
                 color[i] = mat.diffuse[i];
             color[3] = 1.0;
-            spdlog::debug("Adding ColorMaterial {}", glm::to_string(color));
+            //spdlog::debug("Adding ColorMaterial {}", glm::to_string(color));
             auto material = new xe::ColorMaterial(color);
             if (!mat.diffuse_texname.empty()) {
                 auto texture = xe::create_texture(mtl_dir + "/" + mat.diffuse_texname);
-                spdlog::debug("Adding Texture {} {:1d}", mat.diffuse_texname, texture);
+                //spdlog::debug("Adding Texture {} {:1d}", mat.diffuse_texname, texture);
                 if (texture > 0) {
                     material->set_texture(texture);
                 }
@@ -151,11 +151,11 @@ namespace xe {
             for (int i = 0; i < 3; i++)
                 color[i] = mat.diffuse[i];
             color[3] = 1.0;
-            spdlog::debug("Adding ColorMaterial {}", glm::to_string(color));
+            //spdlog::debug("Adding ColorMaterial {}", glm::to_string(color));
             auto material = new xe::PhongMaterial(color);
             if (!mat.diffuse_texname.empty()) {
                 auto texture = xe::create_texture(mtl_dir + "/" + mat.diffuse_texname);
-                spdlog::debug("Adding Texture {} {:1d}", mat.diffuse_texname, texture);
+                //spdlog::debug("Adding Texture {} {:1d}", mat.diffuse_texname, texture);
                 if (texture > 0) {
                     material->set_texture(texture);
                 }

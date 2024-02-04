@@ -9,10 +9,10 @@ add_library(xe-engine
         ColorMaterial.cpp ColorMaterial.h
         Scene.cpp Scene.h
         Mesh.cpp Mesh.h
-        mesh_loader.cpp mesh_loader.h
+        ../Engine/mesh_loader.cpp ../Engine/mesh_loader.h
         Node.cpp Node.h
-        PhongMaterial.cpp PhongMaterial.h
+        ../Engine/PhongMaterial.cpp ../Engine/PhongMaterial.h
         stb_image.cpp lights.h
-        utils.h utils.cpp)
+        ../Engine/utils.h ../Engine/utils.cpp)
 
 target_link_libraries(xe-engine PUBLIC objreader PRIVATE spdlog::spdlog)

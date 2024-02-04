@@ -5,8 +5,8 @@
 #include "PhongMaterial.h"
 
 #include "Application/utils.h"
-#include "XeEngine/utils.h"
-#include "spdlog/spdlog.h"
+#include "utils.h"
+//#include "spdlog/spdlog.h"
 
 namespace xe {
 
@@ -74,7 +74,7 @@ namespace xe {
 
         uniform_map_Kd_location_ = glGetUniformLocation(shader_, "map_Kd");
         if (uniform_map_Kd_location_ == -1) {
-            spdlog::warn("Cannot get uniform {} location", "map_Kd");
+            //spdlog::warn("Cannot get uniform {} location", "map_Kd");
         }
 
     }
