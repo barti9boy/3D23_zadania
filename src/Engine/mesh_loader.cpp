@@ -18,6 +18,7 @@
 #include "Material.h"
 #include "PhongMaterial.h"
 #include "Engine/Mesh.h"
+#include "Engine/ColorMaterial.h"
 
 
 namespace {
